@@ -37,6 +37,7 @@ int main(int argc, char *argv[]){
 	}
 	if(!(fp2 = fopen(argv[2], "r"))){
 		fprintf(stderr, "open error : file2\n");
+		exit(1);
 	}
 
 	uint32_t num1 = ReadFile(fp1);
